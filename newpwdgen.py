@@ -36,7 +36,7 @@ def pickrandom(base, len):
 # Function que retorna senha gerada via CLI.
 def cli(): # só executa o print abaixo.
     print(f'Sua senha é: {senha}\nBase extendida {argv[2]} vezes, comprimento máx. de até {len(usedbase)} caracteres.')
-    if input('Mostrar base?(s/N): ') not in ('s','S'): # if para opção do usuário.
+    if input('Mostrar base?(s/N): ') in ('s','S'): # if para opção do usuário.
         print(f'Base usada:\n{usedbase}') # "printa" base usada.
     return None
 
